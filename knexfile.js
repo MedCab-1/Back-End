@@ -3,25 +3,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: ''///update this file after meeting with backend dev
-    },
-    pool: {
-      afterCreate: (conn, done) => {
-        conn.run('PRAGMA foreing_keys = ON', done);
-      }
-    },
-  migrations: {
-    directory: './database/migrations'
-  },
-  seeds: {
-    directory: './database/seeds'
-    },
-  },
-  production: {
-    client: 'sqlite3',
-    useNullAsDefault: true,
-    connection: {
-      database: '',////add file name after talking with backend dev
+      filename: './database/med_cab.db3',//change once the db has been solified from ds
     },
     pool: {
       afterCreate: (conn, done) => {
@@ -32,7 +14,7 @@ module.exports = {
       directory: './database/migrations',
     },
     seeds: {
-      directory: './database/seeds'
+      directory: './database/seeds',
     },
   },
 };
