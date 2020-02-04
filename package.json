@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "For the back end!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "jest --watch",
+    "km:l": "knex migrate:latest",
+    "km:r": "knex migrate:rollback",
+    "km:u": "knex migrate:up",
+    "km:d": "knex migrate:down",
+    "ks:r": "knex seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MedCab-1/Back-End.git"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.5.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "jest": "^25.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.8",
+    "knex-cleaner": "^1.3.0",
+    "nodemailer": "^6.4.2",
+    "sqlite3": "^4.1.1",
+    "supertest": "^4.0.2"
+  }
+}
