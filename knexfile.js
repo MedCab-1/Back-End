@@ -3,7 +3,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './database/med_cab.db3',//change once the db has been solified from ds
+      filename: './database/med_cab.db3',
     },
     pool: {
       afterCreate: (conn, done) => {
@@ -22,7 +22,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './database/med_cab.db3',//change once the db has been solified from ds
+      filename: './database/med_cab.db3',
     },
     pool: {
       afterCreate: (conn, done) => {
