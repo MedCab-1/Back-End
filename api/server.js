@@ -9,7 +9,7 @@ const server = express();
 configureMiddleware(server);
 
 server.use('/api/user', userRouter);
-server.use('/api/strain', strainRouter);//find strains
+server.use('/api/strain', strainRouter);
 
 server.get('/', (req, res) => {
     res.status(200).json({ api: "You are in"});
