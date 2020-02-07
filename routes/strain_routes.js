@@ -1,13 +1,10 @@
 const axios = require('axios');
 const express = require('express');
 const router = require('express').Router();
-// const db = require('../models/strain_model.js');
 const jwt = require('jsonwebtoken');
 const secrets = require('../api/secret.js');
 
-// const axioswithHeader = (strain) => (axios.create({
-//   body: { strain: strain }
-// }))
+
 
 router.get('/:strain', (req, res) => {
   const strain = req.params.strain;
